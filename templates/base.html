@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>TaskList App</title>
+    <style>
+        
+        
+        
+    body{
+     
+        width: 100%;
+        height: 100%;
+        }
+    body a
+        {
+     
+        }
+        
+        #room-name-input
+        {
+        
+         margin: 10px;
+        }  
+    
+        nav{
+            display: flex;
+            border: 2px solid;
+            border-radius: 5%;
+        }
+        
+        nav a{
+            margin-left: 20%;
+            width: 100%;
+        }
+        
+        #content{
+         text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="/"><h3>Home</h3></a>
+    <a href="addtask"><h3>Add</h3></a>
+    </nav>
+    <div class="content" id="content">
+    {% block content %}
+    
+    {% endblock %}
+        </div>
+</body>
+</html>
